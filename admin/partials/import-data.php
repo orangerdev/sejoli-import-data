@@ -68,16 +68,6 @@
                 <label for="userpassword"><?php _e('Password', 'sejoli-import-data'); ?></label></br>
                 <input type="password" name="user_password" id="userpassword-data" class="userpassword-data" value="" style="width: 50%;"/>
             </div>
-            <!-- <div class="form-group">
-                <label for="postalcode"><?php _e('Postal Code', 'sejoli-import-data'); ?></label></br>
-                <input type="number" name="postalcode" id="postalcode-data" class="postalcode-data" value="" style="width: 50%;"/>
-            </div> -->
-            <!-- <div class="form-group">
-                <label for="payment"><?php _e('Payment Method', 'sejoli-import-data'); ?></label></br>
-                <select name="payment" id="payment-data" class="payment-data" style="width: 50%;">
-                    <option value=""><?php _e('Select a payment method', 'sejoli-import-data'); ?></option>
-                </select>
-            </div> -->
             </br>
             <button type="submit" class="button button-primary"><?php _e('Create Data', 'sejoli-import-data'); ?></button>
         </form>
@@ -90,6 +80,7 @@
         <form method="post" id="import_order_data" enctype="multipart/form-data">
             <input type="file" name="import_order_file" id="import_order_file" />
             <p><?php _e('Upload data penjualan (.csv)', 'sejoli-import-data'); ?></p>
+            <p><?php _e('Format file csv bisa dilihat disini: ', 'sejoli-import-data'); ?><a href="<?php echo SEJOLI_IMPORT_DATA_URL.'/admin/csv/import-data-order.csv' ?>">Csv file</a></p>
 
             <button type="submit" class="button button-primary"><?php _e('Import Data', 'sejoli-import-data'); ?></button>
         </form>
